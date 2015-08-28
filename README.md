@@ -1,2 +1,2 @@
 # aznhassan.github.io
-My personal website hosted on githu
+My personal website hosted on github
