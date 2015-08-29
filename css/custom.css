@@ -8,6 +8,26 @@
   	background-position: 50% 50%;
 }
 
+.contact {
+	padding: 0px;
+	height: 270px;
+	margin-bottom: 0px;
+	background-image: url("../images/background.jpg");
+	/*background-image: url("http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg");*/
+    background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: 50% 50%;
+  	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contact h1 {
+	height: 100px;
+  	line-height: 100px;
+  	white-space: nowrap;
+}
+
 #intro {
 	padding: 60px;
 	padding-top: 90px;
@@ -63,11 +83,27 @@
 	border-radius: 0px;
 }
 
+.noTopMargin {
+	margin-top: 0px;
+}
 
 @media (max-width: 992px) {
 	#self {
 		max-width: 400px;
   		margin-left: auto;
   		margin-right: auto;
+	}
+}
+
+@media (max-width: 768px) {
+	.centerImage {
+		max-width: 180px;
+  		margin-left: auto;
+  		margin-right: auto;
+  		float: none;
+	}
+
+	.container h1 {
+		text-align: center;
 	}
 }
