@@ -1,5 +1,5 @@
 #about {
-	padding: 60px;
+	padding: 0px;
 	margin-bottom: 0px;
 	background-image: url("../images/background.jpg");
 	/*background-image: url("http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg");*/
@@ -53,4 +53,13 @@
 #linkedIn {
 	background-image: url("../images/linkedIn.png");
 	border-radius: 0px;
+}
+
+
+@media (max-width: 992px) {
+	#self {
+		max-width: 400px;
+  		margin-left: auto;
+  		margin-right: auto;
+	}
 }
