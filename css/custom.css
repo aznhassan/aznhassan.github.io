@@ -1,7 +1,13 @@
 #intro {
 	padding: 60px;
-	background-image: url("../images/background-crop.jpg");
+	padding-top: 90px;
+	background-image: url("../images/background.jpg");
+	/*background-image: url("http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg");*/
     background-repeat: no-repeat;
 	background-size: cover;
   	background-position: 50% 50%;
+}
+
+.center {
+	text-align: center;
 }
