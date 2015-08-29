@@ -52,10 +52,34 @@
 	text-decoration: none;
 }
 
+
+.screen {
+	width: 90%;
+	height: 90%;
+	opacity: 0;
+	display: block;
+	position: absolute;
+	background-color: black;
+	-webkit-transition: opacity .2s ease-in-out;
+	-o-transition: opacity .2s ease-in-out;
+	transition: opacity .2s ease-in-out;
+}
+
+.screen h1 {
+	text-align: center;
+	height: 100%;
+    line-height: 260px;
+    white-space: nowrap;
+    color: white;
+}
+
+.screen:hover {
+	opacity: 0.5;
+}
+
 .firstSection {
 	padding-top: 60px;
 }
-
 
 .center {
 	text-align: center;
