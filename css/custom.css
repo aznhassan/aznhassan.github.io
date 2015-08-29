@@ -1,12 +1,25 @@
-#intro {
+#about {
 	padding: 60px;
-	padding-top: 90px;
 	background-image: url("../images/background.jpg");
 	/*background-image: url("http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg");*/
     background-repeat: no-repeat;
 	background-size: cover;
   	background-position: 50% 50%;
 }
+
+#intro {
+	padding: 60px;
+	padding-top: 90px;
+	margin-bottom: 0px;
+	background-image: url("../images/background-crop.jpg");
+	/*background-image: url("http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg");*/
+    background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: 50% 50%;
+  	height: 660px;
+  	font-size: 24px
+}
+
 
 .center {
 	text-align: center;
