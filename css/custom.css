@@ -135,3 +135,16 @@
 		text-align: center;
 	}
 }
+
+.footer {
+	background-color: #1d1d1d;
+	height: 50px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer p {
+	color: white;
+	margin-bottom: 0px;
+}
