@@ -48,6 +48,10 @@
 	padding-top: 30px;
 }
 
+#projects a:link, #projects a:visited, #projects a:hover, #projects a:active {
+	text-decoration: none;
+}
+
 .firstSection {
 	padding-top: 60px;
 }
