@@ -1,6 +1,6 @@
 #about {
 	padding: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 	background-image: url("../images/background.jpg");
 	/*background-image: url("http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg");*/
     background-repeat: no-repeat;
@@ -22,6 +22,14 @@
   	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+#projects {
+	padding-top: 30px;
+}
+
+.firstSection {
+	padding-top: 60px;
 }
 
 
