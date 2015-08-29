@@ -1,5 +1,6 @@
 #about {
 	padding: 60px;
+	margin-bottom: 0px;
 	background-image: url("../images/background.jpg");
 	/*background-image: url("http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg");*/
     background-repeat: no-repeat;
@@ -17,10 +18,39 @@
 	background-size: cover;
   	background-position: 50% 50%;
   	height: 660px;
-  	font-size: 24px
+  	font-size: 24px;
+  	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 
 .center {
 	text-align: center;
+}
+
+.linkbutton {
+	min-width: 70px;
+	min-height: 70px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-radius: 50px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.linkContainer {
+	width: 250px;
+	height: auto;
+	display: block;
+	margin: 0px auto;
+}
+
+#github {
+	background-image: url("../images/github.png");
+}
+
+#linkedIn {
+	background-image: url("../images/linkedIn.png");
+	border-radius: 0px;
 }
