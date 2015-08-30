@@ -54,8 +54,8 @@
 
 
 .screen {
-	width: 90%;
-	height: 92%;
+	width: 99%;
+	height: 99%;
 	opacity: 0;
 	display: block;
 	position: absolute;
@@ -167,4 +167,8 @@
 .footer p {
 	color: white;
 	margin-bottom: 0px;
+}
+
+.thumbnailContainer {
+	position: relative;
 }
