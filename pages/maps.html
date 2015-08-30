@@ -52,7 +52,57 @@
             <h1 class="center">Maps</h1>
         </div>
 
-        
+        <div class="container">
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                This project is an interactive map of Rhode Island. The map can find the shortest path between two addresses by clicking two points on the map, typing in the cross streets, entering the points latitudes and longtidues. The map also gives street by street directions along with auto correct suggestions for street names. The map below is centered on Brown's Campus.</p>
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
+                                  col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
+                <img src="../images/maps1.png" alt="Map 1" class="">
+            </div>
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
+                The Project is split into two parts, a web server and a web client. The server is written in Java using Spark, a small Java web framework, which creates a local server which handles requests from the client. With Spark you create handlers in Java that are called when a user visits a certain URL. This allows the backend to both serve web pages and handle AJAX requests. The client uses Ajax requests to interact with the backend and retrieve information, such as the coordinates of streets to draw or path finding requests. When initializing the site and if the map is ever panned to a region that has not been displayed before, the server sends the web client "blocks" of the map to draw, and the client caches these blocks so data only needs to be sent once. The server stores the data in a SQLite3 database, which it links to with JDBC and queries for information regarding roads. The web client also sends Ajax requests for finding nearest nodes and shortest path between two nodes.
+            </p>
+
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
+                                  col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
+                <img src="../images/maps2.png" alt="Map 2" class="">
+            </div>
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
+                Users can interact with the map in several ways. You can pan the map by clicking on a point and moving to a new one before letting go. You can also zoom in and out using the buttons on the right. 
+            </p>
+
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
+                                  col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
+                <img src="../images/maps4.png" alt="Map 4" class="">
+            </div>
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
+                Here is an example of clicking on two points on the map, marked with red squares, to find the shortest distance between the two points, which is highlighted in light blue on the map. The red squares are actually the nodes closes to the point the user clicked, this is found by sending a request to the server. The server stores the nodes in a <a href="https://en.wikipedia.org/wiki/K-d_tree">K-D Tree (K-Dimensional Tree)</a>, it finds the nearest node to the point the user clicked by running a nearest neighbor search, and sending the node information back to the web client. Once two nodes are selected a request is sent to server to find the shortest path between them. The server accomplishes this by running an <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A*</a> search between them. A*, given a good heuristic, will run faster than a traditional Dijkstra's Algorithm search. 
+            </p> 
+
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
+                                  col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
+                <img src="../images/maps5.png" alt="Map 5" class="">
+            </div>
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center"> 
+                Here is an example of street by street directions. 
+            </p>
+
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
+                                  col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
+                <img src="../images/maps6.png" alt="Map " class="">
+            </div>
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
+                The user can also enter street intersections directly into the search boxes, which can autocorrect the user's requests. The server stores words in a large trie and uses prefix matching, <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein edit distance</a> and word splitting to generate possible words, and ranks the results with a bigram model (a simple Markov chain that suggests words based on the probability of it coming after a previous word).
+            </p>
+
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
+                                  col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
+                <img src="../images/maps7.png" alt="Map 7" class="">
+            </div>
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center"> 
+                Submiting street cross sections also gives you the shortest path between those streets.
+            </p>
+        </div>
 
         <hr class="featurette-divider">
 
