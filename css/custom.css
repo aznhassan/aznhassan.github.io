@@ -44,6 +44,16 @@
 	justify-content: center;
 }
 
+#intro h3 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 150%;
+}
+
+#intro h4 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 100%;
+}
+
 #projects {
 	padding-top: 30px;
 }
