@@ -53,14 +53,113 @@
         </div>
 
         <div class="container">
-            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                This project is an interactive map of Rhode Island. The map can find the shortest path between two addresses by clicking two points on the map, typing in the cross streets, entering the points latitudes and longtidues. The map also gives street by street directions along with auto correct suggestions for street names. The map below is centered on Brown's Campus.</p>
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                I made this project along with three other friends at Brown University. I encourage you to download it and try it for yourself <a href="https://github.com/aznhassan/speedster">here</a>.
+            </p>
             <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
                                   col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
-                <img src="../images/maps1.png" alt="Map 1" class="">
+                <img src="../images/speedster1.png" alt="Map 1" class="">
             </div>
             <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
-                The Project is split into two parts, a web server and a web client. The server is written in Java using Spark, a small Java web framework, which creates a local server which handles requests from the client. With Spark you create handlers in Java that are called when a user visits a certain URL. This allows the backend to both serve web pages and handle AJAX requests. The client uses Ajax requests to interact with the backend and retrieve information, such as the coordinates of streets to draw or path finding requests. When initializing the site and if the map is ever panned to a region that has not been displayed before, the server sends the web client "blocks" of the map to draw, and the client caches these blocks so data only needs to be sent once. The server stores the data in a SQLite3 database, which it links to with JDBC and queries for information regarding roads. The web client also sends Ajax requests for finding nearest nodes and shortest path between two nodes.
+                <br/>Speedster, the final name was never decided, is an auto-styling, auto-flashcard making note taking application. The idea behind Speedster was to allow the anyone to make elegant looking notes the first time around, while also helping them make quickly make flashcards to questions asked in class to review later. The look of notes is accomplished by a mixture of built in styles rules along with custom user rules so they can tweak the styles to their satisfaction. Flashcards are made from the questions and answers writen in all the notes in a subject. 
+            </p>
+
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
+                                  col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
+                <img src="../images/speedster2.png" alt="Map 1" class="">
+            </div>
+
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                Notes are split up by subject. You can see all the notes in a subject by clicking on the subject. You enter a note by clicking on it.
+            </p>
+
+            <h1 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                Auto-Styling
+            </h1>
+
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
+                                  col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
+                <img src="../images/speedster3.png" alt="Map 1" class="">
+            </div>
+
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                This is the page where users can edit and create their own custom styles. Simply press on the 'edit styles' button from the home page to get here.
+            </p>
+
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
+                                  col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
+                <img src="../images/speedster4.png" alt="Map 1" class="">
+            </div>
+
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                Custom styles can be made for any subject. Simply click the plus button to make a new style. A style at the very least needs a name, some text that triggers the style, and what combination of font, font size size, and effects you want. The rule above is a simple example. Let's say we are writting about the Völsunga Saga and we want to bold that whenever we write it down. So the rule should start with 'Völsunga Saga', we select the 'B' option button to make it bold. You can change the font and size here as well. 
+            </p>
+
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
+                                  col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
+                <img src="../images/speedster5.png" alt="Map 1" class="">
+            </div>
+
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                Above we have an example of a more advanced rule. We toggle the 'Additional Styles' section. Here we make the rule start with a quote character, and extend the style until we type another quote character. This rule simply makes anything between two quotation marks italicized.
+            </p>
+
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
+                                  col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
+                <img src="../images/speedster6.png" alt="Map 1" class="">
+            </div>
+
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                Here we see the rules we made in action. The word 'quotes' is italicized as we wanted it, and Völsunga Saga is bolded. We also see an example two built in styles. The first is the lighter box around the Q: and A: lines. This is a built in style used to denote when a flashcard has been made. The second built in style is the text after the pipe, '|', character. This character is used to style section headers. 
+            </p>
+
+            <h1 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                Flashcards
+            </h1>
+
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
+                                  col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
+                <img src="../images/speedster7.png" alt="Map 1" class="">
+            </div>
+
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                So above we saw that flashcards are made in text by typing 'Q:' followed by a question, then a newline, and then 'A:' followed by the answer. You can review all the flashcard you made for a subject by pressing 'review' next to the subject name on the home page. 
+            </p>
+
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
+                                  col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
+                <img src="../images/speedster8.png" alt="Map 1" class="">
+            </div>
+
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                This opens up a new tab with a new flashcard review session. The session will give us all the flashcards in that subject. The flashcards are displayed in order based on their ranking. A flashcard is ranked by the number of times you've gotten the answer correct vs wrong and the last time you reviewed the flashcard. Every once in a while you are given an easier flashcard just so that you are not being bombarded with the most difficult flashcards in the deck. 
+            </p>
+
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
+                                  col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
+                <img src="../images/speedster9.png" alt="Map 1" class="">
+            </div>
+
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                You click on the card to reveal the answer.
+            </p>
+
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
+                                  col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
+                <img src="../images/speedster10.png" alt="Map 1" class="">
+            </div>
+
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                If you answer incorrectly then that flashcard will show up again later.
+            </p>
+
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
+                                  col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
+                <img src="../images/speedster11.png" alt="Map 1" class="">
+            </div>
+
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                Once you answer all the flashcards in a subject correctly then you're done!
             </p>
         </div>
 
