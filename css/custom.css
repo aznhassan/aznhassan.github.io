@@ -29,7 +29,7 @@
 }
 
 #intro {
-	padding: 60px;
+	padding: 0px;
 	padding-top: 90px;
 	margin-bottom: 0px;
 	background-image: url("../images/background-crop.jpg");
@@ -44,6 +44,8 @@
 	justify-content: center;
 }
 
+
+
 #intro h3 {
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 150%;
@@ -52,6 +54,7 @@
 #intro h4 {
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 100%;
+	margin-bottom: -10px;
 }
 
 #projects {
