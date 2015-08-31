@@ -54,14 +54,12 @@
 
         <div class="container">
             <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                This project is an interactive map of Rhode Island. The map can find the shortest path between two addresses by clicking two points on the map, typing in the cross streets, entering the points latitudes and longtidues. The map also gives street by street directions along with auto correct suggestions for street names. The map below is centered on Brown's Campus.</p>
+                I made this project along with four other developers for my last internship with Zayo Group.     
+            </p>
             <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
                                   col-md-offset-2 col-lg-8 col-lg-offset-2 thumbnail">
                 <img src="../images/maps1.png" alt="Map 1" class="">
             </div>
-            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
-                The Project is split into two parts, a web server and a web client. The server is written in Java using Spark, a small Java web framework, which creates a local server which handles requests from the client. With Spark you create handlers in Java that are called when a user visits a certain URL. This allows the backend to both serve web pages and handle AJAX requests. The client uses Ajax requests to interact with the backend and retrieve information, such as the coordinates of streets to draw or path finding requests. When initializing the site and if the map is ever panned to a region that has not been displayed before, the server sends the web client "blocks" of the map to draw, and the client caches these blocks so data only needs to be sent once. The server stores the data in a SQLite3 database, which it links to with JDBC and queries for information regarding roads. The web client also sends Ajax requests for finding nearest nodes and shortest path between two nodes.
-            </p>
         </div>
 
         <hr class="featurette-divider">
