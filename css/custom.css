@@ -185,3 +185,19 @@
 .thumbnailContainer {
 	position: relative;
 }
+
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+}
+
+.carousel-indicators {
+	bottom: -30px;
+}
+
+.carousel-indicators li {
+	border: 1px solid #1F909E;
+}
+
+.carousel-indicators .active {
+  background-color: #1F909E;
+}
