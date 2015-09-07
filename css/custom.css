@@ -223,6 +223,10 @@ html, body {
 	.container h1 {
 		text-align: center;
 	}
+
+	.navbar {
+		text-align: center;
+	}
 }
 
 .footer {
