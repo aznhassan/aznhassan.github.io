@@ -1,4 +1,4 @@
-var minWidth = 753;
+var minWidth = 768;
 
 $(document).ready(function(){
   changeNavBar();
