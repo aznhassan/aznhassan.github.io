@@ -74,7 +74,6 @@ $(document).ready(function(){
             $(".navbar-fixed-top").addClass("navbar-custom").removeClass("navbar-default");
         }
       } else {
-            console.log("Defaulted");
             $(".navbar-fixed-top").removeClass("navbar-custom").addClass("navbar-default");
       }
   }
