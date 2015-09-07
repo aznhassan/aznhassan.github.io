@@ -251,7 +251,7 @@ html, body {
 }
 
 .carousel-indicators {
-	bottom: -30px;
+	/*bottom: -30px;*/ /*-30px*/
 }
 
 .carousel-indicators li {
@@ -260,6 +260,10 @@ html, body {
 
 .carousel-indicators .active {
   background-color: #1F909E;
+}
+
+.carousel {
+  padding-bottom: 50px;
 }
 
 .centerDiv {
@@ -295,4 +299,25 @@ html, body {
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
+}
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+	padding-bottom: 50px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -50px; /* negative value of footer height */
+	height: 50px;
+	clear:both;} 
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
 }
