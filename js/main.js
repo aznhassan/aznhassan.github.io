@@ -1,3 +1,5 @@
+var minWidth = 768;
+
 $(document).ready(function(){
   changeNavBar();
   // Cache selectors
@@ -60,10 +62,12 @@ $(document).ready(function(){
   });
 
   function changeNavBar() {
-      if ($(".navbar").offset().top > 65) {
-          $(".navbar-fixed-top").removeClass("navbar-custom").addClass("navbar-default");
-      } else {
-          $(".navbar-fixed-top").addClass("navbar-custom").removeClass("navbar-default");
+      if ($(window).width > minWidth) {
+        if ($(".navbar").offset().top > 65) {
+            $(".navbar-fixed-top").removeClass("navbar-custom").addClass("navbar-default");
+        } else {
+            $(".navbar-fixed-top").addClass("navbar-custom").removeClass("navbar-default");
+        }
       }
   }
 
