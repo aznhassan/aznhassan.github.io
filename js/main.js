@@ -1,4 +1,4 @@
-var minWidth = 768;
+var minWidth = 753;
 
 $(document).ready(function(){
   changeNavBar();
@@ -61,13 +61,21 @@ $(document).ready(function(){
     changeNavBar();
   });
 
+  $(window).resize(function(){
+    changeNavBar();
+  })
+
   function changeNavBar() {
-      if ($(window).width > minWidth) {
+    //debugger;
+      if ($(window).width() > minWidth) {
         if ($(".navbar").offset().top > 65) {
             $(".navbar-fixed-top").removeClass("navbar-custom").addClass("navbar-default");
         } else {
             $(".navbar-fixed-top").addClass("navbar-custom").removeClass("navbar-default");
         }
+      } else {
+            console.log("Defaulted");
+            $(".navbar-fixed-top").removeClass("navbar-custom").addClass("navbar-default");
       }
   }
 
