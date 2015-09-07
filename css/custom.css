@@ -73,10 +73,54 @@ body{
 	text-decoration: none;
 }
 
+.navbar .navbar-nav > li > a:hover {
+    background-color: transparent;
+    font-style: italic;
+}
+
+
+ .navbar .navbar-nav > li > a:visited, .navbar .navbar-nav > li > a:focus,
+ .navbar .navbar-nav > li > a:active {
+ 	background-color: transparent;
+ }
+
+.navbar .navbar-nav >.active>a, .navbar .navbar-nav >.active>a:hover,
+.navbar-nav >.active>a:active
+ {
+	background-color: transparent;
+	background-image: none;
+	font-style: italic;
+}
+
 .navbar-inner {
     background:transparent;
 }
 
+@media (min-width: 768px) {
+	.navbar-custom {
+		background-color: transparent;
+		background-image: none;
+		border-color: transparent;
+		padding: 5px;
+		box-shadow: none;
+		
+	}
+
+	.navbar {
+		-webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+		-webkit-transition-property: background, padding;
+		-webkit-transition-duration: 0.5s, 0.5s;
+		-webkit-transition-timing-function: ease-in-out, ease-in-out;
+		-webkit-transition-delay: initial, initial;
+		-moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+		transition: background .5s ease-in-out, padding .5s ease-in-out;
+	}
+}
+
+.navbar .navbar-nav > li > a {
+	color: darkslategrey;
+	font-size: 24px;
+}
 
 .screen {
 	width: 99%;

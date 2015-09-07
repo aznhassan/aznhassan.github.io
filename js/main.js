@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  changeNavBar();
   // Cache selectors
   var lastId,
       topMenu = $("#top-menu"),
@@ -55,11 +56,15 @@ $(document).ready(function(){
 
   // Adds background class on scroll
   $(window).scroll(function() {
-      if ($(".navbar").offset().top > 65) {
-          $(".navbar-fixed-top").addClass("top-nav-collapse");
-      } else {
-          $(".navbar-fixed-top").removeClass("top-nav-collapse");
-      }
+    changeNavBar();
   });
+
+  function changeNavBar() {
+      if ($(".navbar").offset().top > 65) {
+          $(".navbar-fixed-top").removeClass("navbar-custom").addClass("navbar-default");
+      } else {
+          $(".navbar-fixed-top").addClass("navbar-custom").removeClass("navbar-default");
+      }
+  }
 
 });
