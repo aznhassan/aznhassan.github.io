@@ -77,7 +77,7 @@
                         <img src="../images/tic1.png" alt="Tic 1" class="">
                     </div>
                     <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
-                        The Project is made entirely out of java with event handling and the creation of the game window achieved with Swing. Everything seen inside the window was painted using Java Graphics2D object. Part of the fun of this project was that I had to create my own UI Kit for displaying and positioning elements. 
+                        The Project is made entirely out of java with event handling and the creation of the game window achieved using Swing. Everything seen inside the window was painted using Java's Graphics2D object. Part of the fun of this project was that I had to create my own UI Kit for displaying and positioning elements. 
                     </p>
                 </div>
 
@@ -87,7 +87,7 @@
                         <img src="../images/tic2.png" alt="Tic 2" class="">
                     </div>
                     <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
-                        The system uses bounding boxes for each element on screen. The positioning of elements is calculated as an offset x and y from the parents origin where x is some percentage of the parents width and y is some percentage of the parents height. An elements own x and y values are also percentages of its parents x and y values. This made positioning elements quite easy. If you wanted an element to be positioned exactly in the center of it's parent, just set its offset to be 25% x and y, and it's size to be 50% x and y. This would push the origin of the element 25% percent into it's parent, followed by the element taking 50%, and then the last 25% of both sides. 
+                        The system uses bounding boxes for each element on screen. The positioning of elements is calculated as an offset x and y from the parent object's origin where x is some percentage of the parent's width and y is some percentage of the parent's height. An element's own x and y values are also percentages of its parent's x and y values. This made positioning elements quite easy. If you wanted an element to be positioned exactly in the center of its parent, just set its offset to be 25% x and y, and its size to be 50% x and y. This would push the origin of the element 25% percent into its parent, followed by the element taking 50% of its parent's width, and then the last 25% to the element's right and bottom. 
                     </p>
                 </div>
 
@@ -127,8 +127,8 @@
                         <img src="../images/tic6.png" alt="Tic 7" class="">
                     </div>
                     <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center"> 
-                        All the elements also support resizing the screen. What took a little more work than I thought 
-                        was getting resizing of text to work just right. When a text box resizes it searches for the 
+                        All the elements also support resizing. What took a little more work than I thought 
+                        was getting the resizing of text to work just right. When a text box resizes it searches for the 
                         the font sizes that fits in both height and width by doing a binary search on the available font sizes. It finds 
                         the upper bound first by doubling the current font size until it doesn't fit. 
                     </p>
