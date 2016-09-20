@@ -315,7 +315,18 @@ html, body {height: 100%;}
 #main {overflow:auto;
 	padding-bottom: 50px;}  /* must be same height as the footer */
 
-#footer {position: relative;
+.push {
+	height: 50px;
+}
+
+.wrapper {
+	min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px;
+}
+#footer {
+	position: relative;
 	margin-top: -50px; /* negative value of footer height */
 	height: 50px;
 	clear:both;} 

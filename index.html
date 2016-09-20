@@ -20,117 +20,120 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <div class="wrapper">
+          <!--[if lt IE 8]>
+              <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+          <![endif]-->
 
-        <!-- Add your site or application content here -->
-       
-        <nav class="navbar navbar-custom navbar-fixed-top">
-          <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+          <!-- Add your site or application content here -->
+         
+          <nav class="navbar navbar-custom navbar-fixed-top">
+            <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+
+              <div class="navbar-collapse collapse" id="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                <ul id="top-menu" class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="resume">Resume</a></li>
+                  <li><a href="contact">Contact</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
             </div>
+          </nav>
 
-            <div class="navbar-collapse collapse" id="navbar-collapse" aria-expanded="false" style="height: 1px;">
-              <ul id="top-menu" class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="resume">Resume</a></li>
-                <li><a href="contact">Contact</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div>
-        </nav>
-
-        <div id="intro" class="jumbotron">
-                <h4 class="center outline">Programmer with a knack for</h4>
-                <h3 class="center outline">Computer Systems</h3>
-                <div class="linkContainer">
-                    <a target="_blank" href="https://github.com/aznhassan"><div id="github" class="linkbutton"></div></a>
-                    <a target="_blank" href="https://www.linkedin.com/pub/hassan-sufi/8a/845/176"><div id="linkedIn" class="linkbutton"></div></a>
-                </div>
-        </div>
-
-        <div id="about" class="jumbotron">
-            <div class="container">
-                <h1 class="center">About Me</h1>
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                    <a href="#" id="self" class="thumbnail">
-                      <img src="images/self-crop.jpg" alt="Photo of Hassan">
-                    </a>
-                </div>
-                <p class="col-xs-12 col-sm-12 col-md-9 col-lg-9">I'm a Junior at Brown University with an interest in all things Computer Systems. My first foray into
-                CS was when I started using a plethora of Linux distros inside different Virtual Boxes. I'm effective in both the backend
-                and frontend of application development, though the backend is my forte. I'm a teaching assistant for CS33, Brown's Intro to Computer Systems course. My other interests include Taekwondo, Dancing, and the Italian language. I'll be updating this site
-                with more projects as I tackle them.</p>
-            </div>
-        </div>
-
-        <div id="projects" class="container marketing">
-            <h1 class="center">Projects</h1>
-          <!-- Three columns of text below the carousel -->
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <a href="/speedster">
-                      <div class="thumbnail thumbnailContainer">
-                        <div class="screen"><h1>Go to project</h1></div>
-                        <img alt="Speedster" style="height: 200px; width: 100%; display: block;" src="images/notes.png">
-                        <div class="caption">
-                          <h3>Speedster</h3>
-                          <p>Speedster is a better note auto-styling application that helps you take elegant notes the first time.</p>
-                        </div>
-                      </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a href="/games">
-                        <div class="thumbnail thumbnailContainer">
-                        <div class="screen"><h1>Go to project</h1></div>
-                          <img alt="Games" style="height: 200px; width: 100%; display: block;" src="images/tic1.png">
-                          <div class="caption">
-                            <h3>Games</h3>
-                            <p>Checkout all the games I made for my 2D Game Engines Class.</p>
-                          </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a href="/maps">
-                        <div class="thumbnail thumbnailContainer">
-                        <div class="screen"><h1>Go to project</h1></div>
-                          <img alt="Maps" style="height: 200px; width: 100%; display: block;" src="images/maps.png">
-                          <div class="caption">
-                            <h3>Maps</h3>
-                            <p>A simple map application that lets you get to and from in Rhode Island</p>
-                          </div>
-                        </div>
-                    </a>
-                </div>
-            </div><!-- /.row -->
-
-
-          <!-- START THE FEATURETTES -->
-
-          <hr class="featurette-divider">
-
-          <div class="row featurette">
-            <div class="col-md-12">
-              <h2 class="featurette-heading center">About this site</span></h2>
-              <p class="lead">This site was made using the help of Bootstrap 3 and HTML5 boilerplate which can be found <a href="http://getbootstrap.com">here</a> and <a href="https://html5boilerplate.com/">here</a> respectively.</p>
-            </div>
+          <div id="intro" class="jumbotron">
+                  <h4 class="center outline">Programmer with a knack for</h4>
+                  <h3 class="center outline">Computer Systems</h3>
+                  <div class="linkContainer">
+                      <a target="_blank" href="https://github.com/aznhassan"><div id="github" class="linkbutton"></div></a>
+                      <a target="_blank" href="https://www.linkedin.com/pub/hassan-sufi/8a/845/176"><div id="linkedIn" class="linkbutton"></div></a>
+                  </div>
           </div>
 
-          <hr class="featurette-divider">
+          <div id="about" class="jumbotron">
+              <div class="container">
+                  <h1 class="center">About Me</h1>
+                  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                      <a href="#" id="self" class="thumbnail">
+                        <img src="images/self-crop.jpg" alt="Photo of Hassan">
+                      </a>
+                  </div>
+                  <p class="col-xs-12 col-sm-12 col-md-9 col-lg-9">I'm a Junior at Brown University with an interest in all things Computer Systems. My first foray into
+                  CS was when I started using a plethora of Linux distros inside different Virtual Boxes. I'm effective in both the backend
+                  and frontend of application development, though the backend is my forte. I'm a teaching assistant for CS33, Brown's Intro to Computer Systems course. My other interests include Taekwondo, Dancing, and the Italian language. I'll be updating this site
+                  with more projects as I tackle them.</p>
+              </div>
+          </div>
 
-          <!-- /END THE FEATURETTES -->
-        </div>
+          <div id="projects" class="container marketing">
+              <h1 class="center">Projects</h1>
+            <!-- Three columns of text below the carousel -->
+              <div class="row">
+                  <div class="col-sm-6 col-md-4">
+                      <a href="/speedster">
+                        <div class="thumbnail thumbnailContainer">
+                          <div class="screen"><h1>Go to project</h1></div>
+                          <img alt="Speedster" style="height: 200px; width: 100%; display: block;" src="images/notes.png">
+                          <div class="caption">
+                            <h3>Speedster</h3>
+                            <p>Speedster is a better note auto-styling application that helps you take elegant notes the first time.</p>
+                          </div>
+                        </div>
+                      </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a href="/games">
+                          <div class="thumbnail thumbnailContainer">
+                          <div class="screen"><h1>Go to project</h1></div>
+                            <img alt="Games" style="height: 200px; width: 100%; display: block;" src="images/tic1.png">
+                            <div class="caption">
+                              <h3>Games</h3>
+                              <p>Checkout all the games I made for my 2D Game Engines Class.</p>
+                            </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a href="/maps">
+                          <div class="thumbnail thumbnailContainer">
+                          <div class="screen"><h1>Go to project</h1></div>
+                            <img alt="Maps" style="height: 200px; width: 100%; display: block;" src="images/maps.png">
+                            <div class="caption">
+                              <h3>Maps</h3>
+                              <p>A simple map application that lets you get to and from in Rhode Island</p>
+                            </div>
+                          </div>
+                      </a>
+                  </div>
+              </div><!-- /.row -->
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+              <div class="col-md-12">
+                <h2 class="featurette-heading center">About this site</span></h2>
+                <p class="lead">This site was made using the help of Bootstrap 3 and HTML5 boilerplate which can be found <a href="http://getbootstrap.com">here</a> and <a href="https://html5boilerplate.com/">here</a> respectively.</p>
+              </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+          </div>
+          <div class="push"></div>
+        </div">
 
         <!-- FOOTER -->
         <div class="footer">
